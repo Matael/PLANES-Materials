@@ -5,6 +5,21 @@ This is a collection of referenced materials designed to be used with
 
 Feel free to fork and append some !
 
+## How to use it as a drop-in collection in PLANES
+
+When creating you PLANES project, just extract the content of the repository into
+`m/Materials` :
+
+	$ mkdir -p MyPLANESProject/{m/Materials,out}
+	$ tree MyPLANESProject
+	MyPLANESProject
+	├── m
+	│   └── Materials
+	└── out
+	$ cd MyPLANESProject/m/Materials
+	$ wget https://github.com/Matael/PLANES-Materials/archive/master.tar.gz -O - \
+			| tar xz && mv PLANES-Materials-master/*.m . && rm -rf PLANES-Materials-master
+
 ## Classification
 
 ### Porous
@@ -21,3 +36,4 @@ Class Number | Type of Material
 Class Number | Type of Material
 -------------|-----------------
 1XX 				 | Metals
+
