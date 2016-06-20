@@ -9,6 +9,7 @@
 porous_model.eqf='JCA';
 porous_model.frame='structural';
 porous_model.aniso='no';
+porous_model.typical_thickness = .35e-3;
 
 phi=0.72;
 sig=99e3;
