@@ -14,8 +14,5 @@ LCT=86e-6;
 rho_1=41;
 nu=0.3;
 young=286e3;
-cisaill=.5*young/(1+nu)
+cisaill=.5*young/(1+nu);
 eta=0.015;
-
-gfdgfd
-
