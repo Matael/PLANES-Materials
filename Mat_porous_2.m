@@ -1,6 +1,11 @@
 %
+<<<<<<< HEAD
 %	Type: Foam (4)
 %	Reference : Allard & Atalla 2009, Table 11.4
+=======
+%	Type: Foam
+%	Reference : Allard & Atalla 2009, Table 11.4, Foam (4)
+>>>>>>> origin/master
 
 porous_model.eqf='JCA';
 porous_model.frame='structural';
