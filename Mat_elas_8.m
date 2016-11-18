@@ -1,6 +1,6 @@
-% Mat_porous_5.m
+% Mat_elas_7.m
 %
-% Copyright (C) 2016 < Olivier DAZEL <olivier.dazel@univ-lemans.fr> >
+% Copyright (C) 2014 < Olivier DAZEL <olivier.dazel@univ-lemans.fr> >
 %
 % This file is part of PLANES.
 %
@@ -32,18 +32,13 @@
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 %%
 
-porous_model.eqf='JCA';
-porous_model.frame='structural';
-porous_model.aniso='no';
+
+E_solide=1.9e6;
+nu_solide=0.48;
+eta_solide=omega*796/E_solide;
+rho_solide=1800;
+
+lambda_solide=(1+1i*eta_solide)*(E_solide*nu_solide)/((1+nu_solide)*(1-2*nu_solide));
+mu_solide=(1+1i*eta_solide)*(E_solide)/(2*(1+nu_solide));
 
 
-phi=0.989;
-sig=8060;
-alpha=1.00;
-LCV=2.14e-4;
-LCT=LCV;
-rho_1=6.1000;
-nu=0.24000E+00;
-N_cisaill=2.28e4;
-young=2*N_cisaill*(1+nu);
-eta=0.02;

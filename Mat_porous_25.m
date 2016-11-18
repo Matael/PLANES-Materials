@@ -1,6 +1,6 @@
-% Mat_porous_5.m
+% Mat_PEM_25.m
 %
-% Copyright (C) 2016 < Olivier DAZEL <olivier.dazel@univ-lemans.fr> >
+% Copyright (C) 2014 < Olivier DAZEL <olivier.dazel@univ-lemans.fr> >
 %
 % This file is part of PLANES.
 %
@@ -37,13 +37,13 @@ porous_model.frame='structural';
 porous_model.aniso='no';
 
 
-phi=0.989;
-sig=8060;
-alpha=1.00;
-LCV=2.14e-4;
-LCT=LCV;
-rho_1=6.1000;
-nu=0.24000E+00;
-N_cisaill=2.28e4;
+phi=0.95;
+sig=4.2e4;
+alpha=1.10;
+LCV=1.5e-5;
+LCT=4.5e-5;
+rho_1=126;
+nu=0.24;
+N_cisaill=2.8e5;
 young=2*N_cisaill*(1+nu);
-eta=0.02;
+eta=0.05;

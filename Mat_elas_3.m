@@ -1,4 +1,4 @@
-% Mat_porous_5.m
+% Mat_elas_3.m
 %
 % Copyright (C) 2016 < Olivier DAZEL <olivier.dazel@univ-lemans.fr> >
 %
@@ -32,18 +32,26 @@
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 %%
 
-porous_model.eqf='JCA';
-porous_model.frame='structural';
-porous_model.aniso='no';
 
 
-phi=0.989;
-sig=8060;
-alpha=1.00;
-LCV=2.14e-4;
-LCT=LCV;
-rho_1=6.1000;
-nu=0.24000E+00;
-N_cisaill=2.28e4;
-young=2*N_cisaill*(1+nu);
-eta=0.02;
+% E_solide=4.968424852675948D+10;
+% nu_solide=0.454021058288132D+00;
+eta_solide=0.00;
+rho_solide=7800.00E+00;
+
+% lambda_solide=(1+1i*eta_solide)*(E_solide*nu_solide)/((1+nu_solide)*(1-2*nu_solide))
+% mu_solide=(1+1i*eta_solide)*(E_solide)/(2*(1+nu_solide))
+
+c_p=5100;
+c_s=1480;
+
+mu_solide=c_s^2*rho_solide;
+lambda_solide=c_p^2*rho_solide-2*mu_solide;
+
+
+
+
+
+
+
+
